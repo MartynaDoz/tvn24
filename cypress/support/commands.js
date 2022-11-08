@@ -1,6 +1,8 @@
 ///<reference types="cypress" />
 
-Cypress.Comannds.add('enterTVN24.pl', () => {
+
+//reuzywalna metoda
+Cypress.Commands.add('enterTVN24', () => {
 
     cy.visit('www.tvn24.pl')
     cy.get('#onetrust-accept-btn-handler')

@@ -44,3 +44,4 @@ module.exports = (on, config) => {
     )
     return config
   }
+  import './commands'
