@@ -1,6 +1,5 @@
 ///<reference types="cypress" />
 
-
 //reuzywalna metoda
 Cypress.Commands.add('enterTVN24', () => {
 
