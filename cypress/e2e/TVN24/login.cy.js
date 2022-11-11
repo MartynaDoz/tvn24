@@ -22,6 +22,12 @@ describe('loginTest', () => {
             .type('J@vorzk@13!')
 
         cy.get('#sign_in')
-            .dblclick()
+            .click()
+            
+    //Ze względu na captcha wymagane ponowne klikniecie po załadowaniu
+        cy.get('#sign_in')
+            .click()
+        
+        
     })
 })
