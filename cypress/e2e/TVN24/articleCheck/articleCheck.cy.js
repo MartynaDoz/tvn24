@@ -1,4 +1,4 @@
-import { Given, When, And, Then } from '@badeball/cypress-cucumber-preprocessor'
+import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
 
 Given('Uzytkownik znajduje sie na stronie glownej tvn24', () => {
     cy.enterTVN24()
@@ -21,13 +21,12 @@ Then('Artykul poprawnie zaladowal sie', () => {
     cy.scrollTo("bottom")
     cy.get('.inline-author')
         .should('be.visible')
-        .contains('Autor')
 })
 
-When('Uzytkownik pauzuje odtwarzanie', () => {
+Then('Uzytkownik manipuluje odtwarzaczem', () => {
 
-    cy.get('.sc-elYLMi')
+    cy.get('.playlist__content')
         .click()
-    cy.get('.playing.nuviPlayPauseButton')
-        .click()
+    cy.get('.paused')
+        .click({multiple: true})
 })
