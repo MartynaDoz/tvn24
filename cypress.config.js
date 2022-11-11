@@ -20,5 +20,6 @@ module.exports = defineConfig({
       ["**/*.feature", "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}"]
   },
   viewportWidth: 1650,
-  viewportHeight: 1080
+  viewportHeight: 1080,
+  chromeWebSecurity: false 
 });
