@@ -23,11 +23,9 @@ describe('loginTest', () => {
 
         cy.get('#sign_in')
             .click()
-            
+        cy.wait(2000)
     //Ze względu na captcha wymagane ponowne klikniecie po załadowaniu
         cy.get('#sign_in')
             .click()
-        
-        
     })
 })
